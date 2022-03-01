@@ -1,0 +1,16 @@
+﻿<h1>PassUsingViewBag</h1>
+<CalcValues>
+    <div>
+        <b>Rand Value First :</b>@ViewBag.CalcValues.FirstRandValue<br>
+        <b>Rand Value Second :</b> @ViewBag.CalcValues.SecondRandValue<br>
+        <b>Add :</b><br>
+        @ViewBag.CalcValues.Sum<br>
+        <b>Sub :</b><br>
+        @ViewBag.CalcValues.Difference<br>
+        <b>Mult :</b> <br>
+        @ViewBag.CalcValues.Multiplication<br>
+        <b>Div :</b> <br>
+        @(ViewBag.CalcValues.Division != null ? ViewBag.CalcValues.Division : "Error")<br>
+
+    </div>
+</CalcValues>

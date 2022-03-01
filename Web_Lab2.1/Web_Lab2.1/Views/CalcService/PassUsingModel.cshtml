@@ -1,0 +1,16 @@
+﻿@model WebLab2._1.Models.CalcValues
+
+<h1>PassUsingModel</h1>
+<div>
+    <b>Rand Value First :</b>@Model.FirstRandValue<br>
+    <b>Rand Value Second :</b> @Model.SecondRandValue<br>
+    <b>Add :</b><br>
+    @Model.Sum<br>
+    <b>Sub :</b><br>
+    @Model.Difference<br>
+    <b>Mult :</b> <br>
+    @Model.Multiplication<br>
+    <b>Div :</b> <br>
+    @(Model.Division != null ? Model.Division : "Error")<br>
+
+</div>
