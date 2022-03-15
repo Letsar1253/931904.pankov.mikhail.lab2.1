@@ -37,3 +37,5 @@ C:\Users\User\source\repos\Web_Lab2.1\Web_Lab2.1\obj\Debug\net5.0\Web_Lab2.1.gen
 C:\Users\User\source\repos\Web_Lab2.1\Web_Lab2.1\obj\Debug\net5.0\Web_Lab2.1.csproj.CopyComplete
 C:\Users\User\source\repos\Web_Lab2.1\Web_Lab2.1\obj\Debug\net5.0\Razor\Views\CalcService\PassUsingModel.cshtml.g.cs
 C:\Users\User\source\repos\Web_Lab2.1\Web_Lab2.1\obj\Debug\net5.0\Razor\Views\CalcService\PassUsingViewBag.cshtml.g.cs
+C:\Users\User\source\repos\Web_Lab2.1\Web_Lab2.1\obj\Debug\net5.0\Razor\Views\CalcService\PassUsingViewData.cshtml.g.cs
+C:\Users\User\source\repos\Web_Lab2.1\Web_Lab2.1\obj\Debug\net5.0\Razor\Views\CalcService\AccessServiceDirectly.cshtml.g.cs

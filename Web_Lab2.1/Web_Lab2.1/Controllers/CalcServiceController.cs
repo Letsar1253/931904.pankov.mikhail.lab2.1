@@ -34,5 +34,27 @@ namespace WebLab2._1.Controllers
             };
             return View();
         }
+
+        [Route("PassUsingViewData")]
+        public IActionResult PassUsingViewData()
+        {
+            var values = CalcService.GetCalcValues();
+            ViewData["CalcValues"] = new CalcValues()
+            {
+                FirstRandValue = values.FirstRandValue,
+                SecondRandValue = values.SecondRandValue,
+                Sum = values.Sum,
+                Difference = values.Difference,
+                Multiplication = values.Multiplication,
+                Division = values.Division
+            };
+            return View();
+        }
+
+        [Route("AccessServiceDirectly")]
+        public IActionResult AccessServiceDirectly()
+        {
+            return View(CalcService.GetCalcValues());
+        }
     }
 }

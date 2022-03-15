@@ -1,0 +1,20 @@
+﻿@using WebLab2._1.Models
+@{
+    var CalcValues = ViewData["CalcValues"] as CalcValues;
+}
+<h1>PassUsingViewData</h1>
+<CalcValues>
+    <div>
+        <b>Rand Value First :</b>@CalcValues.FirstRandValue<br>
+        <b>Rand Value Second :</b> @CalcValues.SecondRandValue<br>
+        <b>Add :</b><br>
+        @CalcValues.Sum<br>
+        <b>Sub :</b><br>
+        @CalcValues.Difference<br>
+        <b>Mult :</b> <br>
+        @CalcValues.Multiplication<br>
+        <b>Div :</b> <br>
+        @(CalcValues.Division != null ? CalcValues.Division : "Error")<br>
+
+    </div>
+</CalcValues>
