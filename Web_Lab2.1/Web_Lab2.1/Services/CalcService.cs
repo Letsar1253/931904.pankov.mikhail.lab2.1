@@ -26,5 +26,21 @@ namespace WebLab2._1.Services
                 Division = secondValue != 0 ? firstValue / secondValue : null
             };
         }
+
+        public CalcValues GetCalcValues2()
+        {
+            var rand = new Random();
+            var firstValue = rand.Next(Range);
+            var secondValue = rand.Next(Range);
+            return new CalcValues()
+            {
+                FirstRandValue = firstValue,
+                SecondRandValue = secondValue,
+                Sum = firstValue + secondValue,
+                Difference = firstValue - secondValue,
+                Multiplication = firstValue * secondValue,
+                Division = secondValue != 0 ? firstValue / secondValue : null
+            };
+        }
     }
 }

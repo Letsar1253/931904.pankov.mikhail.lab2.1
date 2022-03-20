@@ -20,7 +20,7 @@ namespace WebLab2._1.Controllers
         }
 
         [Route("PassUsingViewBag")]
-        public IActionResult PassUsingViewBag()
+        public IActionResult PassUsingViewBag(CalcValues calcValues)
         {
             var values = CalcService.GetCalcValues();
             ViewBag.CalcValues = new CalcValues()
@@ -54,7 +54,7 @@ namespace WebLab2._1.Controllers
         [Route("AccessServiceDirectly")]
         public IActionResult AccessServiceDirectly()
         {
-            return View(CalcService.GetCalcValues());
+            return View();
         }
     }
 }

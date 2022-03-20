@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebLab2._1.Services;
 
 namespace Web_Lab2._1
 {
@@ -24,6 +25,7 @@ namespace Web_Lab2._1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddScoped<CalcService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
